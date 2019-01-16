@@ -1,12 +1,21 @@
 import VueRouter from 'vue-router'
 
+import home from "../src/components/home.vue"
+import member from "../src/components/member.vue"
+import shopcart from "../src/components/shopcart.vue"
+import search from "../src/components/search.vue"
 
-// 3. 创建路由对象
 var router = new VueRouter({
   routes: [
-    // account  goodslist
+    
+    {path:"/",redirect:"/home"},
+    {path:"/home",component:home},
+    {path:"/member",component:member},
+    {path:"/shopcart",component:shopcart},
+    {path:"/search",component:search}
         
-  ]
+  ],
+  linkActiveClass:"mui-active"
 })
 
 // 把路由对象暴露出去

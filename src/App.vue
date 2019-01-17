@@ -59,24 +59,6 @@
 .v-leave-active {
   transition: all 0.5s ease;
 }
-// .v-enter{
-//  	transform:translateX(100%);
-//  	opacity: 0;
-//  } 
-//  .v-leave-to {
-// 	transform:translateX(-100%);
-// 	opacity: 0;
-// 	position: absolute;
-
-//  } 
-// // .v-enter .v-leave-to{
-// // 	opacity: 0;
-// // 	transform: translateX(100%)
-// // }
-// .v-enter-active .v-leave-active{
-// 	transition: all 0.5s ease;
-// }
-
 </style>
 
  

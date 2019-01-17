@@ -4,17 +4,18 @@
 <div>
    
     <mt-swipe :auto="4000">
-    <mt-swipe-item>1</mt-swipe-item>
-    <mt-swipe-item>2</mt-swipe-item>
-    <mt-swipe-item>4</mt-swipe-item>
+    <mt-swipe-item><img src="http://img0.imgtn.bdimg.com/it/u=1269259457,1952255815&fm=26&gp=0.jpg" alt=""></mt-swipe-item>
+    <mt-swipe-item><img src="http://img5.imgtn.bdimg.com/it/u=1711851296,3741488527&fm=26&gp=0.jpg" alt=""></mt-swipe-item>
+    <mt-swipe-item><img src="http://img3.imgtn.bdimg.com/it/u=2742838211,4087012610&fm=26&gp=0.jpg" alt=""></mt-swipe-item>
 </mt-swipe>
 
 
 <!-- 九宫格 -->
         <ul class="mui-table-view mui-grid-view mui-grid-9">
-		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+						<router-link to="/home/newslist">
 		                    <span class="mui-icon"><img src="../images/menu1(1).png" alt=""></span>
-		                    <div class="mui-media-body">新闻资讯</div></a></li>
+		                    <div class="mui-media-body">新闻资讯</div></router-link></li>
 		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
 		                    <span class="mui-icon"><img src="../images/menu2.png" alt=""></span>
 		                    <div class="mui-media-body">图片分享</div></a></li>
@@ -60,7 +61,10 @@
 .mint-swipe{
     height: 200px;
     .mint-swipe-item{
-        background-color: red;
+        img{
+			width: 486px;
+			height: 200px;
+		}
     }
 
 }
